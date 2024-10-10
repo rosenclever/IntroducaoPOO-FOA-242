@@ -91,6 +91,7 @@
             btnExcluir.TabIndex = 5;
             btnExcluir.Text = "Excluir";
             btnExcluir.UseVisualStyleBackColor = true;
+            btnExcluir.Click += btnExcluir_Click;
             // 
             // lstClientes
             // 
@@ -100,6 +101,7 @@
             lstClientes.Name = "lstClientes";
             lstClientes.Size = new Size(170, 94);
             lstClientes.TabIndex = 6;
+            lstClientes.SelectedIndexChanged += lstClientes_SelectedIndexChanged;
             // 
             // frmCliente
             // 
