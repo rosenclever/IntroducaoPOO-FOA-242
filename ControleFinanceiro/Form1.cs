@@ -36,9 +36,11 @@ namespace ControleFinanceiro
 
         private void btnInserir_Click(object sender, EventArgs e)
         {
-            Cliente cliente = new Cliente();
-            cliente.Nome = txtNome.Text;
-            cliente.Cpf = txtCpf.Text;
+            
+            string nome = txtNome.Text;
+            string cpf = txtCpf.Text;
+            Cliente cliente = new Cliente(nome, cpf);
+
             lstClientes.Items.Add(cliente.ToString());
             LimparCaixas();
         }
